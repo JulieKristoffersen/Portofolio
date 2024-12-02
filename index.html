@@ -4,35 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <nav class="navbar">
+            <h1 class="logo"><a href="#">My Portfolio</a></h1>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my journey as a developer and explore the projects I've worked on.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </section>
     </header>
     <main>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="project-cards">
                 <div class="card">
                     <img src="images/csm_homepage.png" alt="Project 1 Screenshot">
-                    <h3>Community Science museum</h3>
-                    <p>Semester project 1</p>
-                    <a href="https://github.com/JulieKristoffersen/Community-Science-Museum" target="_blank">GitHub Repo</a>
+                    <div class="card-content">
+                        <h3>Community Science Museum</h3>
+                        <p>Semester Project 1</p>
+                        <a href="https://github.com/JulieKristoffersen/Community-Science-Museum" target="_blank">GitHub Repo</a>
+                        <a href="project1.html" class="btn">Learn More</a>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="images/rainydays_homepage.png" alt="Project 2 Screenshot">
-                    <h3>Rainydays</h3>
-                    <p>Cross course project</p>
-                    <a href="https://github.com/JulieKristoffersen/Course-Assignment-Rainydays" target="_blank">GitHub Repo</a>
+                    <div class="card-content">
+                        <h3>Rainydays</h3>
+                        <p>Cross Course Project</p>
+                        <a href="https://github.com/JulieKristoffersen/Course-Assignment-Rainydays" target="_blank">GitHub Repo</a>
+                        <a href="project2.html" class="btn">Learn More</a>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="images/nwnw_hompage.png" alt="Project 3 Screenshot">
-                    <h3>No weath, No worries</h3>
-                    <p>Project exam 1</p>
-                    <a href="https://github.com/JulieKristoffersen/Exam1-No-Wheat-No-Worries" target="_blank">GitHub Repo</a>
+                    <div class="card-content">
+                        <h3>No Wheat, No Worries</h3>
+                        <p>Project Exam 1</p>
+                        <a href="https://github.com/JulieKristoffersen/Exam1-No-Wheat-No-Worries" target="_blank">GitHub Repo</a>
+                        <a href="project3.html" class="btn">Learn More</a>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I’m a passionate developer with experience in creating responsive and user-friendly websites. Explore my journey through these projects and feel free to connect with me for collaboration opportunities.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via <a href="mailto:julnys51546@stud.noroff.no">email</a> or connect with me on <a href="https://www.linkedin.com/in/julie-nk" target="_blank">LinkedIn</a>.</p>
         </section>
     </main>
     <footer>
