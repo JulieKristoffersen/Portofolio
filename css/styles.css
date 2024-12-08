@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #45523e;
-    --secondary-color: #b0aca2;
-    --dark-color: #333;
-    --light-color: #f9f9f9;
-    --white: #fff;
-    --text-color: #333;
-    --font-family: 'Roboto', sans-serif;
+    --primary-color: #6B8E68;  
+    --secondary-color: #F1F1EB;  
+    --accent-color: #4C5E4D;  
+    --background-color: #E6EAE2;  
+    --text-color: #2D2D2D; 
+    --dark-color: #3E4C47;  
+    --light-color: #F4F6F4;  
+    --white: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.2); 
 }
 
 * {
@@ -18,6 +20,7 @@ body {
     font-family: var(--font-family);
     color: var(--text-color);
     line-height: 1.6;
+    background-color: var(--background-color);  
 }
 
 .btn {
@@ -45,6 +48,13 @@ body {
     text-align: center;
 }
 
+.navbar .logo {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin-right: 2rem;
+}
+
 .navbar {
     background-color: var(--dark-color);
     color: var(--white);
@@ -55,8 +65,9 @@ body {
 }
 
 .nav-links {
+    list-style-type: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .nav-links a {
@@ -79,10 +90,11 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(to bottom, var(--dark-color), var(--primary-color));  
     color: var(--white);
     padding: 4rem 1rem;
     text-align: center;
+    box-shadow: 0px 4px 6px var(--shadow-color);  
 }
 
 .hero h1 {
@@ -94,9 +106,8 @@ body {
     margin-top: 1.5rem;
 }
 
-
 .projects {
-    background-color: var(--light-color);
+    background-color: var(--light-color);  
     padding: 3rem 1rem;
 }
 
@@ -108,9 +119,9 @@ body {
 }
 
 .card {
-    background-color: var(--white);
+    background-color: #fff; 
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-color); 
     overflow: hidden;
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -118,7 +129,7 @@ body {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px var(--shadow-color); 
 }
 
 .card img {
@@ -153,7 +164,7 @@ body {
 
 .about {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #f1f1eb;  
     text-align: center;
 }
 
@@ -170,20 +181,8 @@ body {
     line-height: 1.6;
 }
 
-.about-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.about-list li {
-    font-size: 1em;
-    margin: 10px 0;
-    text-align: left;
-}
-
-
 .contact {
-    background-color: var(--dark-color);
+    background-color: var(--dark-color);  
     color: var(--white);
     padding: 3rem 1rem;
     text-align: center;
@@ -231,6 +230,12 @@ footer a:hover {
 
     .nav-links.show {
         display: flex;
+    }
+
+    .navbar .logo {
+        margin: 0;
+        margin-bottom: 1rem;
+        align-self: center;
     }
 
     .hamburger {
