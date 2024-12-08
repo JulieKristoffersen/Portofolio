@@ -5,16 +5,15 @@ My portofolio is a responsive and user-friendly website to show my own work and 
 Description
 
 My Portofolio aims to:
-
-Share my projects
-Inspire others to see my work
-Create a visually appealing, accessible, and easy-to-navigate website.
+- Share my projects
+- Inspire others to see my work
+- Create a visually appealing, accessible, and easy-to-navigate website.
 
 This project was created using:
-HTML5
-CSS3
-JavaScript (ES6+)
-Netlify (for deployment)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Netlify (for deployment)
 
 Getting Started Installing Follow these steps to get the project up and running locally:
 
