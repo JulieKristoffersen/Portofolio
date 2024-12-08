@@ -72,7 +72,9 @@ body {
 
 .nav-links a {
     color: var(--white);
+    text-decoration: none;
     transition: color 0.3s ease;
+    padding-right: 3rem;
 }
 
 .nav-links a:hover {
@@ -98,7 +100,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -107,60 +109,92 @@ body {
 }
 
 .projects {
-    background-color: var(--light-color);  
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
+    background-color: var(--light-color); 
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .project-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid layout */
     gap: 2rem;
-    justify-content: center;
+    justify-items: center;
 }
 
 .card {
-    background-color: #fff; 
+    background-color: var(--white);
     border-radius: 10px;
-    box-shadow: 0 4px 8px var(--shadow-color); 
     overflow: hidden;
-    width: 300px;
+    box-shadow: 0 4px 12px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px var(--shadow-color); 
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px var(--shadow-color);
 }
 
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .card-content {
-    padding: 1rem;
-    text-align: center;
+    padding: 1.5rem;
+    text-align: left;
 }
 
 .card-content h3 {
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
 }
 
-.card-content p {
+.card-category {
+    font-size: 1rem;
+    color: var(--accent-color);
     margin-bottom: 1rem;
-    font-size: 0.9rem;
 }
 
-.card-content .btn {
-    padding: 0.5rem 1rem;
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-links .btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-links .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.card-links .btn-learn {
+    background-color: var(--secondary-color);
+}
+
+.card-links .btn-learn:hover {
     background-color: var(--primary-color);
 }
 
-.card-content .btn:hover {
-    background-color: var(--secondary-color);
-}
 
 .about {
     padding: 50px 0;
