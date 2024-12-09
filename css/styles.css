@@ -285,7 +285,7 @@ body {
 
 .contact-links .btn {
     padding: 0.8rem 1.5rem;
-    background-color: var(--primary-color);
+    background-color: var( --accent-color);
     color: var(--white);
     font-weight: bold;
     text-transform: uppercase;
@@ -296,7 +296,7 @@ body {
 }
 
 .contact-links .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transform: translateY(-4px);
 }
 
